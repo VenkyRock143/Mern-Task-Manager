@@ -20,12 +20,3 @@ const app = initializeApp(firebaseConfig);
 // Initialize Cloud Firestore and get a reference to the service
 //Export the reference to be used in other files
 export const db = getFirestore(app);
-
-/**const firebaseConfig = {
-  apiKey: "*********************************",
-  authDomain: "*******************************",
-  projectId: "***********************",
-  storageBucket: "******************************",
-  messagingSenderId: "******************",
-  appId: "************************"
-}; */
