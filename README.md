@@ -26,7 +26,7 @@ The Task Manager app allows users to create, update, delete, and filter tasks. I
 
 ## Demo
 
-![Task Manager Screenshot](path-to-your-screenshot.png)
+Link: https://master--task-managerrock.netlify.app/
 
 ## Getting Started
 
