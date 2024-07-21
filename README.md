@@ -32,8 +32,6 @@ Link: https://master--task-managerrock.netlify.app/
 
 ### Prerequisites
 
-- Node.js (v14 or above)
-- npm (v6 or above)
 - Firebase project with Firestore enabled
 
 ### Installation
