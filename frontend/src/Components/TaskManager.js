@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = 'http://localhost:5000/api/tasks'; // Update with your backend URL
+const API_URL = 'http://localhost:5000/api/tasks';
 
 export default function TaskManager() {
     const [formData, setFormData] = useState({ title: "", description: "", status: "To Do" });
