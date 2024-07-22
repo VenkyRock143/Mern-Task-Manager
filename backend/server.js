@@ -12,6 +12,11 @@ const app = express();
 app.use(cors()); // Enable CORS for all routes
 app.use(express.json());
 
+app.get('/', (req, res) => {
+  res.send('Server is running');
+});
+
+
 app.use('/api/tasks', require('./routes/taskRoutes'));
 
 // if (process.env.NODE_ENV === 'production') {
