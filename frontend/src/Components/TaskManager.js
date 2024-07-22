@@ -47,14 +47,17 @@ export default function TaskManager() {
     };
     
     const removeTask = async (id) => {
+        console.log('Removing task with ID:', id); // Debug line
         try {
-            await axios.delete(`${API_URL}/${id}`);
-            const res = await axios.get(API_URL);
-            setTasks(res.data);
+          await axios.delete(`${API_URL}/${id}`);
+          console.log('Task removed successfully'); // Debug line
+          const res = await axios.get(API_URL);
+          setTasks(res.data);
         } catch (error) {
-            console.error('Error deleting task:', error);
+          console.error('Error deleting task:', error); // Debug line
         }
-    };
+      };
+      
     
     const updateStatus = async (id, newStatus) => {
         try {
