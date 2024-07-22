@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import axios from "axios";
 
-const API_URL = 'https://mern-task-manager-bkva.onrender.com/api/tasks';
+const API_URL = 'https://mern-task-manager-backend-qbgz.onrender.com/api/tasks';
 
 export default function TaskManager() {
     const [formData, setFormData] = useState({ title: "", description: "", status: "To Do" });
