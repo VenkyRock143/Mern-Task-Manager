@@ -4,7 +4,7 @@ import axios from "axios";
 const API_URL = 'https://mern-task-manager-backend-qbgz.onrender.com/api/tasks';
 
 export default function TaskManager() {
-    const [formData, setFormData] = useState({ title: "", description: "", status: "To Do" });
+    const [formData, setFormData] = useState({ title: "", description: "", status: "Pending" });
     const [tasks, setTasks] = useState([]);
     const [statusFilter, setStatusFilter] = useState("All");
 
@@ -38,7 +38,7 @@ export default function TaskManager() {
                 status: formData.status
             });
     
-            setFormData({ title: "", description: "", status: "To Do" });
+            setFormData({ title: "", description: "", status: "Pending" });
             const res = await axios.get(API_URL);
             setTasks(res.data);
         } catch (error) {
@@ -73,9 +73,9 @@ export default function TaskManager() {
 
     const getStatusStyle = (status) => {
         switch (status) {
-            case "To Do":
+            case "Pending":
                 return { color: 'blue' };
-            case "In Progress":
+            case "Completed":
                 return { color: 'orange' };
             case "Done":
                 return { color: 'green' };
@@ -123,8 +123,8 @@ export default function TaskManager() {
                                 color: '#333'
                             }}
                         >
-                            <option value="To Do">To Do</option>
-                            <option value="In Progress">In Progress</option>
+                            <option value="Pending">To Do</option>
+                            <option value="Completed">In Progress</option>
                             <option value="Done">Done</option>
                         </select>
                     </Row>
@@ -142,8 +142,8 @@ export default function TaskManager() {
                 borderRadius: '5px'
             }}>
                 <button onClick={() => setStatusFilter("All")}>All</button>
-                <button style={{ color: 'blue' }} onClick={() => setStatusFilter("To Do")}>To Do</button>
-                <button style={{ color: 'orange' }} onClick={() => setStatusFilter("In Progress")}>In Progress</button>
+                <button style={{ color: 'blue' }} onClick={() => setStatusFilter("Pending")}>To Do</button>
+                <button style={{ color: 'orange' }} onClick={() => setStatusFilter("Completed")}>In Progress</button>
                 <button style={{ color: 'green' }} onClick={() => setStatusFilter("Done")}>Done</button>
             </div>
             <div className="tasks-container">
@@ -169,8 +169,8 @@ export default function TaskManager() {
                                         marginBottom: "10px"
                                     }}
                                 >
-                                    <option value="To Do">To Do</option>
-                                    <option value="In Progress">In Progress</option>
+                                    <option value="Pending">Pending</option>
+                                    <option value="Completed">Completed</option>
                                     <option value="Done">Done</option>
                                 </select>
                             </div>
