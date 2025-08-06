@@ -1,7 +1,7 @@
 
-# MERN Task Manager
+#🧠 MERN Task Manager
+A full-stack task management app built with the MERN stack (MongoDB, Express, React, Node.js). Users can register, log in, and manage personal tasks with full CRUD functionality — all secured with JWT authentication and HTTP-only cookies.
 
-A simple Task Manager built with MongoDB, Express, React, Node. This app helps users to track their daily tasks and monitor their progress over time.
 
 **Link:** [Task Manager](https://mern-task-manager-venky.netlify.app/)
 
@@ -35,6 +35,42 @@ Task-Manager
 │   └── package.json
 ```
 
+
+## 🚀 Features
+✅ User authentication (register/login/logout)
+✅ Secure routes with JWT & HTTP-only cookies
+✅ Task CRUD (Create, Read, Update, Delete)
+✅ Responsive UI using React & TailwindCSS
+✅ Protected routes (only logged-in users can access dashboard)
+✅ Backend API built with Express.js and MongoDB
+✅ Modular and clean code structure
+✅ Environment-based config with .env support
+✅ Error handling and toast notifications
+
+## 🛠️ Tech Stack
+Frontend:
+
+React.js
+
+React Router
+
+Axios
+
+TailwindCSS (or CSS Modules / Styled Components)
+
+React Toastify
+
+Backend:
+
+Node.js
+
+Express.js
+
+MongoDB + Mongoose
+
+JSON Web Tokens (JWT)
+
+bcryptjs
 
 ## Overview
 
