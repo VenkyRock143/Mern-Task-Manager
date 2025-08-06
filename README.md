@@ -37,40 +37,21 @@ Task-Manager
 
 
 ## 🚀 Features
-✅ User authentication (register/login/logout)
-✅ Secure routes with JWT & HTTP-only cookies
-✅ Task CRUD (Create, Read, Update, Delete)
-✅ Responsive UI using React & TailwindCSS
-✅ Protected routes (only logged-in users can access dashboard)
-✅ Backend API built with Express.js and MongoDB
-✅ Modular and clean code structure
-✅ Environment-based config with .env support
-✅ Error handling and toast notifications
+* ✅ User authentication (register/login/logout)
+* ✅ Secure routes with JWT & HTTP-only cookies
+* ✅ Task CRUD (Create, Read, Update, Delete)
+* ✅ Responsive UI using React & TailwindCSS
+* ✅ Protected routes (only logged-in users can access dashboard)
+* ✅ Backend API built with Express.js and MongoDB
+* ✅ Modular and clean code structure
+* ✅ Environment-based config with .env support
+* ✅ Error handling and toast notifications
 
-## 🛠️ Tech Stack
-Frontend:
+## 📁 Tech Stack
 
-React.js
-
-React Router
-
-Axios
-
-TailwindCSS (or CSS Modules / Styled Components)
-
-React Toastify
-
-Backend:
-
-Node.js
-
-Express.js
-
-MongoDB + Mongoose
-
-JSON Web Tokens (JWT)
-
-bcryptjs
+* **Backend:** Node.js, Express.js, JSON Web Tokens (JWT), bcryp
+* **Frontend:** React.js, React Router, Axios
+* **Database:** MongoDB + Mongoose
 
 ## Overview
 
