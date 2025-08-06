@@ -69,4 +69,15 @@ To run this app locally, follow these steps:
 1. Clone the repository:
 
 ```bash
+
 git clone https://github.com/VenkyRock143/Mern-Task-Manager.git
+cd Mern-Task-Manager
+```
+
+```bash
+* **Backend
+cd server
+npm install
+cp .env.example .env  # Add your MongoDB URI and JWT secret
+npm run dev
+```
