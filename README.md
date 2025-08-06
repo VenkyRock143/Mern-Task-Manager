@@ -73,11 +73,29 @@ To run this app locally, follow these steps:
 git clone https://github.com/VenkyRock143/Mern-Task-Manager.git
 cd Mern-Task-Manager
 ```
-
+Backend
 ```bash
-* **Backend
 cd server
 npm install
 cp .env.example .env  # Add your MongoDB URI and JWT secret
 npm run dev
 ```
+
+Frontend
+```bash
+cd client
+npm install
+npm start
+```
+
+🔐 Environment Variables
+Create a .env file inside the server/ folder:
+```bash
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+```
+🚀 Deployment Instructions
+* **Backend: Deploy on Render
+* **Frontend: Deploy on Vercel
+* **Use environment variables in dashboard settings
