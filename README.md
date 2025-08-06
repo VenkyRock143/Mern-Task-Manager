@@ -96,6 +96,6 @@ MONGO_URI=your_mongodb_uri
 JWT_SECRET=your_jwt_secret
 ```
 🚀 Deployment Instructions
-* **Backend: Deploy on Render
-* **Frontend: Deploy on Vercel
-* **Use environment variables in dashboard settings
+* Backend: Deploy on Render
+* Frontend: Deploy on Vercel
+* Use environment variables in dashboard settings
